@@ -1,7 +1,32 @@
+:root {
+    --heading-font: 'Josefin Sans',
+        sans-serif;
+    --text-font: 'Joan',
+        serif;
+}
+
 body {
-font-family: 'Joan', serif;
+font-family: var(--text-font);
 }
 
 h1, h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--heading-font);
+}
+
+.header-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bali.jpeg);
+    background-size: cover;
+    color: #fff;
+    padding: 200px 10px;
+    text-align: center;
+}
+.header-section h2 {
+    font-family: var(--text-font);
+    margin-top: 30px;
+}
+
+.contact-button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 40px;
 }
