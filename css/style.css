@@ -16,11 +16,13 @@ font-family: var(--text-font);
 h1, h2 {
     font-family: var(--heading-font);
 }
-.main-navigation, .footer {
-    background-color: var(--third-color);
+.main-navigation {
+    background-color: var(--first-color);
+    padding: 0;
 }
 .main-menu {
     justify-content: end;
+    font-size: 25px;
 }
 .header-section {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bali.jpeg);
@@ -32,43 +34,47 @@ h1, h2 {
 .header-section h2 {
     font-family: var(--text-font);
     margin-top: 30px;
+    line-height: 1.5;
 }
 .header-section h1, .header-section h2 {
     text-shadow: 2px 2px 2px black;
 }
 .contact-button {
     border-radius: 10px;
-    padding: 10px 20px;
     margin-top: 40px;
 }
 
 .main-page {
     padding: 0;
-}
-.text-section {
     background: var(--first-color);
 }
-.main-img-row {
-    background: var(--fourth-color);
-}
+
 .home-page-text-row {
-    padding: 100px 30px;
+    padding: 100px 30px 50px 30px;
     font-size: 32px;
     text-align: center;
     line-height: 2;
 }
-.home-page-img-row {
-    padding: 50px 5px;
-}
+
 .home-page-img-row img {
     border-radius: 10px;
 }
-.btn-travel {
+.btn-travel, .contact-button {
     background: var(--fourth-color);
     padding: 10px 100px;
     font-size: 25px;
-    color: #ffffff;
-
+    color: black;
+    text-transform: uppercase;
+}
+.social-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.footer-line {
+   color: var(--fourth-color);
+  border-width: 3px;
 
 }
 @media (max-width: 576px) {
@@ -81,4 +87,17 @@ h1, h2 {
     .btn-travel {
         font-size: 16px;
     }
+    .img-logo {
+        width: 200px;
+    }
+    .main-menu {
+        font-size: 16px;
+    }
+    .contact-button {
+        text-transform: none;
+        padding: 10px 50px;
+    }
+        .header-section h2 {
+            line-height: 1.2;
+        }
 }
