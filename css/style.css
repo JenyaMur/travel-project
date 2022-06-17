@@ -11,10 +11,12 @@
 
 body {
 font-family: var(--text-font);
+
 }
 
 h1, h2 {
     font-family: var(--heading-font);
+    text-align: center;
 }
 .main-navigation {
     background-color: var(--first-color);
@@ -22,7 +24,7 @@ h1, h2 {
 }
 .main-menu {
     justify-content: end;
-    font-size: 25px;
+    font-size: 20px;
 }
 .header-section {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bali.jpeg);
@@ -76,6 +78,12 @@ h1, h2 {
    color: var(--fourth-color);
   border-width: 3px;
 
+}
+.about-page-section {
+
+}
+.about-page-section img {
+    border-radius: 20px;
 }
 @media (max-width: 576px) {
     .home-page-text-row {
