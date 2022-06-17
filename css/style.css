@@ -8,10 +8,23 @@
     --third-color: #87a8d0;
     --fourth-color: #c3b4d2;
 }
-
+html {
+    height: 100%;
+}
 body {
-font-family: var(--text-font);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+   flex-direction: column;
+    font-family: var(--text-font);
+    background: var(--first-color);
 
+}
+main {
+    flex-grow: 1;
+}
+footer {
+    flex-shrink: 0;
 }
 
 h1, h2 {
@@ -46,14 +59,8 @@ h1, h2 {
     margin-top: 40px;
 }
 
-.main-page {
-    padding: 0;
-    background: var(--first-color);
-}
-
 .home-page-text-row {
     padding: 100px 30px 50px 30px;
-    font-size: 32px;
     text-align: center;
     line-height: 2;
 }
@@ -64,7 +71,7 @@ h1, h2 {
 .btn-travel, .contact-button {
     background: var(--fourth-color);
     padding: 10px 100px;
-    font-size: 25px;
+  
     color: black;
     text-transform: uppercase;
 }
@@ -73,6 +80,9 @@ h1, h2 {
     justify-content: space-evenly;
     padding-top: 10px;
     padding-bottom: 40px;
+}
+.social-row img:hover {
+    opacity: 0.5;
 }
 .footer-line {
    color: var(--fourth-color);
