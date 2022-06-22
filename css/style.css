@@ -31,6 +31,9 @@ h1, h2 {
     font-family: var(--heading-font);
     text-align: center;
 }
+p {
+    text-align: justify;
+}
 .img-logo {
     width: 200px;
 }
@@ -109,7 +112,17 @@ h1, h2 {
 .contact-block a:hover {
     color: var(--fourth-color);
 }
-
+.trip-info-block {
+    display: flex;
+    flex-direction: column;
+}
+.trip-text {
+    flex-grow: 1;
+}
+.trip-img-block {
+    display: flex;
+    align-items: center;
+}
 @media (max-width: 576px) {
     .home-page-text-row {
             padding: 40px;
@@ -133,4 +146,8 @@ h1, h2 {
         .header-section h2 {
             line-height: 1.2;
         }
+   .trip-info-block h2 {
+       margin: 20px auto;
+       line-height: 1;
+   }
 }
