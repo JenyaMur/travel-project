@@ -58,7 +58,7 @@ p {
     line-height: 1.5;
 }
 .header-section h1, .header-section h2 {
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px #000000;
 }
 .contact-button {
     border-radius: 10px;
@@ -78,7 +78,7 @@ p {
     background: var(--fourth-color);
     padding: 10px 100px;
   
-    color: black;
+    color: #000000;
     text-transform: uppercase;
 }
 .social-row {
